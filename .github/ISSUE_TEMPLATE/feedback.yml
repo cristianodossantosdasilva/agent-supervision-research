@@ -1,0 +1,22 @@
+name: Feedback público
+description: Sugestão não confidencial sobre visão, documentação ou experiência.
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: Não publique segredos, vulnerabilidades, dados pessoais ou informações de clientes.
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: O que foi observado?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Sugestão
+      description: Qual melhoria está sendo proposta?
+    validations:
+      required: true
